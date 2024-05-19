@@ -6,6 +6,7 @@ import './Caviet.css';
 const Caviet = ({ isOpen, onClose }) => {
   if (!isOpen) return null;
 
+  //Use ReatDom Api to create portal
   return ReactDOM.createPortal(
     <div className="caviet">
       <div className="caviet-content">
